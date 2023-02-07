@@ -1,0 +1,27 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-transform: uppercase;
+}
+h1 {
+    display: inline-block;
+
+    
+}
+ul {
+    float: right;
+    margin-top: -50px;
+}
+li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.cta-btn {
+    margin-left:3em;
+    background-color: orange;
+    color: white;
+    padding: 1em 1em;
+}
+
+
