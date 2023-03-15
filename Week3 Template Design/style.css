@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+header {
+    width: 100%;
+    height: 65vh;
+    background-image: url(img/hero4.png);
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -1;
+    pointer-events: none;
+}
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+    background-color: #E3E6F3;
+    
+}
+
+nav > img {
+    padding-left: 4%;
+    cursor: pointer;
+    padding-bottom: 1%;
+    cursor: pointer;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    margin-top: .5%;
+    padding-right: 15%;
+    gap: 10%;
+    
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #465B53;
+    
+}
+
+nav > ul > li > a:hover, a.active{
+    color: #0BC7B9;
+    transition: 0.2s;
+}
+
+header > .cta-btn {
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 4%;
+    line-height: 25px;
+}
+
+.offer {
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.products {
+    font-size: 2rem;
+    color: #0BC7B9;
+    margin-bottom: 15px;
+}
+.coupons {
+    font-weight:100;
+    font-size: .8rem;
+    margin-bottom: 15px;
+}
+
+
+.shop-btn {
+    background-image: url(img/button.png);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    padding-bottom: 10%;
+    font-weight: bold; 
+}
+
+.shop-btn > a {
+    text-decoration: none;
+    color: #0BC7B9;
+}
+
+.features {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 10%;
+    gap: 2%;
+}
+
+.features > .feature {
+    border: 1px #0BC7B9;
+    height: 22vh;
+    border-style: solid;
+    box-shadow: 0 0 5px grey;
+    padding-top: 2%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*Feature Animation*/
+
+.features > .feature:hover {
+    transform: translatey(-5%);
+}
+
+.features > .feature > a {
+    text-decoration: none;
+    color: #0BC7B9;
+    background-color: #FCDCE3;
+    padding: 5px;
+    font-size: .8rem;
+    height: 50px;
+    width: 20%;
+    display: block;
+    width: fit-content;
+    height: auto;
+    margin-left: 18%;
+    margin-top: 20%;
+    border-radius: 3px;
+}
+
+.features > .feature2 a {
+    background-color: #CEEBBD;
+
+} 
+.features > .feature3 a {
+    background-color: #D1E7F2;
+
+} 
+.features > .feature4 a {
+    background-color: #CED4F7;
+
+} 
+.features > .feature5 a {
+    background-color: #F5DBF6;
+
+} 
+.features > .feature6 a {
+    background-color: #FFF1E4;
+} 
+
+/* .features-and-shop {
+    width: 100%;
+} */
+/* Features and Shop Page */
+
+.shop-caption {
+    margin-top: 3%;
+    line-height: 35px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.shop-caption > p {
+    font-size: .8rem;
+}
+
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.item > img {
+    width: 253px;
+    height: 253px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/*Products Animation*/
+.item > img:hover {
+    transform: scale(0.9);
+}
+
+.item-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 253px;
+    margin: 0 10px 10px 10px;
+    
+    
+}
+.shopping-cart {
+    align-self: flex-end;
+    margin: 10px;
+    background-color: #E7F6E9;
+    color: #0BC7B9;
+    border-radius: 15px;
+    width: 35px;
+    height: 35px;
+    padding: 7px 5px;
+    cursor: pointer;
+}
+
+.item {
+    box-shadow: 0 0 10px grey;
+    border: 2px solid green;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+
+.item-captions > p {
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+.item-captions > h5 {
+    text-transform: capitalize;
+}
+
+.item-captions > .price {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #0BC7B9;
+    font-weight: bold;
+}
+
+.item-captions > i{
+    color: orange;
+}
+
+/* repair services banner */
+
+.banner{
+    background-image: url(img/banner/b2.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-caption {
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.banner-caption > h3 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.banner-caption > p {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 3%;
+}
+
+.banner-caption > p > span {
+    color: #FC4E45;
+    
+}
+
+.banner-caption > button {
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+/* sign up form */
+#sign-up {
+    background-image: url(img/banner/b2.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sign-up-details > h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.sign-up-details > p {
+    color: white;
+    text-transform: capitalize;
+}
+
+.sign-up-details > p > span {
+    color: orange;
+}
+
+.cta-sign-up > input {
+    height: 30px;
+    width: 300px;
+}
+
+.cta-sign-up > button {
+    padding: 5px;
+    height: 30px;
+    width: 90px;
+    text-transform: capitalize;
+    background-color: #0BC7B9;
+    border-style: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+footer > ul {
+    list-style: none; 
+}
+
+footer > ul > li {
+    padding-bottom: 10px;
+}
+
+footer > ul > .column-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.first-column > li > img {
+    cursor: pointer;
+}
+
+.first-column > .icons > i {
+    color: #0BC7B9;
+    cursor: pointer;
+}
+
+ .fourth-column > .app > img {
+    border: 1px solid #0BC7B9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fourth-column > .pay > img {
+    cursor: pointer;
+}
+
+/* grid items  */
+
+
+.top-cell {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    
+
+}
+
+
+.cell2 img {
+    height: 344px;
+}
+
+.bottom-cell {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+}
+
+.bottom-cell img {
+    width: 360px;
+    height: 200px;
+}
+
+.cell1 {
+    position: relative;
+}
+
+.cell-contents {
+    position: absolute;
+}
+
+.cell-contents p {
+    display: inline-block;
+}
+
