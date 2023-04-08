@@ -1,0 +1,13 @@
+body {
+    height: 2000px;
+}
+
+#backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+
